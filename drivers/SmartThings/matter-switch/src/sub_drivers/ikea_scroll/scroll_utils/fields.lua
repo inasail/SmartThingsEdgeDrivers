@@ -24,6 +24,9 @@ IkeaScrollFields.MAX_SCROLL_PRESSES = 18
 -- Amount to rotate per scroll event
 IkeaScrollFields.PER_SCROLL_EVENT_ROTATION = st_utils.round(1 / IkeaScrollFields.MAX_SCROLL_PRESSES * 100)
 
+-- Throttle interval: accumulate scroll events and emit once per interval (seconds)
+IkeaScrollFields.SCROLL_EVENT_THROTTLE_INTERVAL = 1
+
 -- Field to track the latest number of presses counted during a single scroll event sequence
 IkeaScrollFields.LATEST_NUMBER_OF_PRESSES_COUNTED = "__latest_number_of_presses_counted"
 
